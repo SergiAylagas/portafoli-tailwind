@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Responsive Webpage Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="flex justify-between items-center container mx-auto">
+            <div class="text-white text-lg font-bold">My Enhanced Website</div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-white hover:underline">Home</a>
+                <a href="#" class="text-white hover:underline">About</a>
+                <a href="#" class="text-white hover:underline">Services</a>
+                <a href="#" class="text-white hover:underline">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white"></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to My Enhanced Website</h1>
+            <p class="text-lg">Discover amazing content and services. Tailwind makes it magical!</p>
+        </div>
+    </section>
+
+    <!-- Featured Items Grid -->
+    <section class="py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold">Featured Item 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id feugiat velit.</p>
+                <img src="./img/image1.jpg" alt="Featured Item 1" class="mt-4 w-full h-auto rounded" />
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold">Featured Item 2</h2>
+                <p>Nulla facilisi. Sed euismod mauris at justo varius, ac ultricies elit posuere.</p>
+                <img src="./img/image2.jpg" alt="Featured Item 2" class="mt-4 w-full h-auto rounded" />
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <h2 class="text-xl font-semibold">Featured Item 3</h2>
+                <p>Quisque euismod elit eu felis vestibulum, vitae mattis tortor sodales.</p>
+                <img src="./img/image3.jpg" alt="Featured Item 3" class="mt-4 w-full h-auto rounded" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-6">Contact Us</h2>
+            <form class="max-w-lg mx-auto bg-white p-6 rounded shadow">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium">Name:</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded p-2" />
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium">Email:</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded p-2" />
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded p-2"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded hover:bg-blue-500">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Link to Responsive Design Example -->
+    <section class="py-10">
+        <div class="container mx-auto text-center">
+            <a href="./responsive.html" class="text-blue-600 hover:underline">Check out our Responsive Design Example</a>
+        </div>
+    </section>
+
+</body>
+</html>
